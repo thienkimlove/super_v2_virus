@@ -53,110 +53,6 @@ return [
         ],
 
 
-        'richxyz' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'richxyz',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'richnet' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'richnet',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'azoffers' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'azoffers',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'appsdude' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'appsdude',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'justapp' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'justapp',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'mobifaster' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'mobifaster',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
-
-        'super' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'super',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-            'unix_socket' => '/var/run/mysqld/mysqld.sock'
-        ],
 
 
         'affapk' => [
@@ -190,6 +86,21 @@ return [
             'unix_socket' => '/var/run/mysqld/mysqld.sock'
         ],
 
+        'svtool' => [
+            'driver' => 'mysql',
+            'host' => '127.0.0.1',
+            'port' => '3306',
+            'database' => 'svtool',
+            'username' => 'root',
+            'password' => 'tieungao',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+            'unix_socket' => '/var/run/mysqld/mysqld.sock'
+        ],
+
 
 
 
@@ -207,34 +118,6 @@ return [
             'strict' => true,
             'engine' => null,
             'unix_socket' => env('DB_SOCK', '/var/run/mysqld/mysqld.sock')
-        ],
-
-        'lumen' => [
-            'driver' => 'mysql',
-            'host' => '127.0.0.1',
-            'port' => '3306',
-            'database' => 'lumen',
-            'username' => 'root',
-            'password' => 'tieungao',
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
-
-        'virtual' => [
-            'driver' => 'mysql',
-            'host' => '115.146.123.46',
-            'port' => '3306',
-            'database' => 'lumen',
-            'username' => 'tieungao',
-            'password' => 'tieungao123',
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
         ],
 
         'pgsql' => [

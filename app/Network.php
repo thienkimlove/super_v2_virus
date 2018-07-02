@@ -34,12 +34,10 @@ class Network extends Model
                 $response_html = '<a class="table-action-btn" title="Chỉnh sửa network" href="' . route('networks.edit', $network->id) . '"><i class="fa fa-pencil text-success"></i></a>';
 
                 if ($network->cron) {
-                    if (in_array(env('DB_DATABASE'), config('site.list'))) {
-                        $response_html .= '<a class="table-action-btn" title="Run Cron" target="_blank" href="http://115.146.127.8:8080/core/cron/?site='.env('DB_DATABASE').'&network_id='.$network->id.'"><i class="fa fa-tasks text-success"></i></a>';
-                    } else {
-                        $response_html .= '<a class="table-action-btn" title="Run Cron" href="' . route('networks.cron', $network->id) . '"><i class="fa fa-tasks text-success"></i></a>';
-                    }
+                    $response_html .= '<a class="table-action-btn" title="Run Cron" target="_blank" href="http://115.146.127.8:8080/core/cron/?site='.env('DB_DATABASE').'&network_id='.$network->id.'"><i class="fa fa-tasks text-success"></i></a>';
                 }
+
+               // $response_html .= '<a class="table-action-btn" title="Run Cron" href="' . route('networks.cron', $network->id) . '"><i class="fa fa-tasks text-success"></i></a>';
 
                 return $response_html;
 

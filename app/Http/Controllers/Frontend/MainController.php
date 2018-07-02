@@ -230,7 +230,6 @@ class MainController extends Controller
                                                     'link' => $true_link,
                                                     'allow' => $offer->allow_devices,
                                                     'country' => $checkLocation,
-                                                    'site_name' => env('DB_DATABASE')
                                                 ]);
                                             }
                                         } catch (\Exception $e) {
@@ -347,7 +346,6 @@ class MainController extends Controller
                                             'link' => $true_link,
                                             'allow' => $offer->allow_devices,
                                             'country' => $checkLocation,
-                                            'site_name' => env('DB_DATABASE')
                                         ]);
 
                                     }
