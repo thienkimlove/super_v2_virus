@@ -40,6 +40,13 @@ root@ubuntu:/etc/nginx/sites-enabled# service nginx restart
 
 `root@ubuntu:/var/www/html/super_v2# php artisan migrate --database=azoffers`
 
-* Add users to new database 
+### Create new site clone
 
-`insert into new_azoffers.users select * from richnet.users where email= 'quan.dm@teko.vn' or email = 'boyeucon09@gmail.com'`
+* Create database, truncate all except `users` with id=1 and id=2.
+
+* Copy Nginx vhost file.
+
+* Go to google Console for adding url.
+
+* go to `Project` to update database name for Cron.
+
